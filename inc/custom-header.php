@@ -33,10 +33,10 @@
  */
 function portforwardpodcast_custom_header_setup() {
 	$args = array(
-		'default-image'          => '',
+		'default-image'          => get_template_directory_uri() . '/images/pfp.png',
 		'default-text-color'     => '000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 995,
+		'height'                 => 100,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'portforwardpodcast_header_style',
 		'admin-head-callback'    => 'portforwardpodcast_admin_header_style',

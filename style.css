@@ -48,6 +48,7 @@ html {
 }
 body {
 	background: #fff;
+	background-image:url('images/subtle_freckles.png');
 }
 article,
 aside,
@@ -554,3 +555,5 @@ object {
 #searchsubmit {
 	display: none;
 }
+
+

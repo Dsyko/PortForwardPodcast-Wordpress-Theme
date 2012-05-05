@@ -6,7 +6,7 @@
  * @since Portforwardpodcast 1.0
  */
 ?>
-		<div id="secondary" class="widget-area" role="complementary">
+		<div id="secondary" class="widget-area span3" role="complementary">
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 

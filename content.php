@@ -2,17 +2,21 @@
 /**
  * @package Portforwardpodcast
  * @since Portforwardpodcast 1.0
+ * Content, as displayed on front page list of posts
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'portforwardpodcast' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
+<article id="post-<?php the_ID(); ?>" <?php post_class("span9"); ?>>
+	<header class="entry-header row">
+		<div class="entry-meta span1">
 			<?php portforwardpodcast_posted_on(); ?>
 		</div><!-- .entry-meta -->
+		<h2 class="entry-title span7"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'portforwardpodcast' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<div class="admin-controls span1">
+			<?php edit_post_link( __( 'Edit', 'portforwardpodcast' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
+		<div>
+		<?php if ( 'post' == get_post_type() ) : ?>
+		
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
@@ -56,6 +60,6 @@
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'portforwardpodcast' ), __( '1 Comment', 'portforwardpodcast' ), __( '% Comments', 'portforwardpodcast' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'portforwardpodcast' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
+		
 	</footer><!-- #entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

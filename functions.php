@@ -120,3 +120,15 @@ add_action( 'wp_enqueue_scripts', 'portforwardpodcast_scripts' );
  * Implement the Custom Header feature
  */
 require( get_template_directory() . '/inc/custom-header.php' );
+
+function special_nav_class($classes, $item){
+	//echo print_r($item);
+	echo "<pre>";
+	print_r($item); // or var_dump()
+	echo "</pre><br>";
+	 //if(is_single() && $item->title == "Sample Page"){ //Notice you can change the conditional from is_single() and $item->title
+			 $classes[] = "special-class";
+	// }
+	 return $classes;
+}
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);

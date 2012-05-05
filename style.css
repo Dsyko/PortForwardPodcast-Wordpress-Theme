@@ -1241,4 +1241,35 @@ a.thumbnail:hover{border-color:#0088cc;-webkit-box-shadow:0 1px 4px rgba(0, 105,
 .hide{display:none;}
 .show{display:block;}
 .invisible{visibility:hidden;}
+/* END Bootstrap*/
 
+
+/* PFP Styling */
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(images/sprites.png);}
+
+.Contact {width:108px; height:30px; background-position: -288px -34px}
+.Donate {width:109px; height:30px; background-position: -292px -203px}
+.Home {width:90px; height:30px; background-position: -403px -34px}
+.Music {width:113px; height:30px; background-position: -260px -171px}
+.Tms {width:334px; height:30px; background-position: -164px -2px}
+.adminmouth {width:60px; height:67px; background-position: -164px -34px}
+.arrow {width:30px; height:36px; background-position: -224px -209px}
+.bitcoin {width:34px; height:34px; background-position: -256px -209px}
+.calendar {width:60px; height:66px; background-position: -212px -103px}
+.floppysm {width:32px; height:30px; background-position: -274px -96px}
+.mouth {width:60px; height:67px; background-position: -150px -127px}
+.numcomments {width:60px; height:60px; background-position: -226px -34px}
+.paypallogo {width:72px; height:37px; background-position: -150px -196px}
+.pin {width:20px; height:22px; background-position: -2px -229px}
+.reply {width:20px; height:19px; background-position: -24px -229px}
+.rss {width:34px; height:36px; background-position: -224px -171px}
+.tags {width:25px; height:27px; background-position: -78px -227px}
+.tower1 {width:70px; height:98px; background-position: -78px -127px}
+.tower2 {width:74px; height:100px; background-position: -2px -127px}
+.twitterbird {width:160px; height:123px; background-position: -2px -2px}
+
+
+h2 a, h2 a:visited{
+color: black;
+}

@@ -34,7 +34,7 @@
 	<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="span1">
 			<?php if ( !post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-			<span class="comments-link sprite numcomments"><?php comments_popup_link( "0","1", "%" ); ?></span>
+			<span class="comments-link sprite numcomments"><span class="commentcountertext"><?php comments_popup_link( "0","1", "%" ); ?></span></span>
 			<?php endif; ?>
 		</div>
 		<div class="span8">

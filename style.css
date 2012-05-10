@@ -1245,6 +1245,9 @@ a.thumbnail:hover{border-color:#0088cc;-webkit-box-shadow:0 1px 4px rgba(0, 105,
 
 
 /* PFP Styling */
+.site-header{
+margin-top: 25px;
+}
 #main{
 margin-top: 65px;
 }
@@ -1299,10 +1302,11 @@ margin: 0;
 .comment{
 margin: 10px 0 10px 0;
 }
-
+.comment-reply-form,
 .comment-content{
 	position:relative;
 	left:-20px;
+	padding-left: 5px;
 	border-style:solid;
 	border-color:#ffffff;
 	border-width:4px;
@@ -1323,7 +1327,7 @@ margin: 10px 0 10px 0;
 .user{
 font-size:1.1em;
 font-weight:bold;
-color: #FFF;
+color: #000;
 }
 .admin{
 font-size:1.1em;

@@ -67,18 +67,21 @@ function portforwardpodcast_comment( $comment, $args, $depth ) {
 			break;
 		default :
 	?>
-	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		<article id="comment-<?php comment_ID(); ?>" class="comment">
-			<footer>
+	<li <?php comment_class("row"); ?> id="li-comment-<?php comment_ID(); ?>">
+		<article id="comment-<?php comment_ID(); ?>" class="comment span9">
+			<footer <?php if($comment->comment_parent == 0){echo 'class="span1"';} else{echo 'class="span1 offset1"';} ?>>
 				<div class="comment-author vcard">
 					<?php echo get_avatar( $comment, 40 ); ?>
-					<?php printf( __( '%s <span class="says">says:</span>', 'portforwardpodcast' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 				</div><!-- .comment-author .vcard -->
 				<?php if ( $comment->comment_approved == '0' ) : ?>
 					<em><?php _e( 'Your comment is awaiting moderation.', 'portforwardpodcast' ); ?></em>
 					<br />
 				<?php endif; ?>
 
+				
+			</footer>
+
+			<div class="comment-content <?php if($comment->comment_parent == 0){echo "span7";} else{echo "span 6";} ?>">
 				<div class="comment-meta commentmetadata">
 					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
 					<?php
@@ -88,13 +91,15 @@ function portforwardpodcast_comment( $comment, $args, $depth ) {
 					<?php edit_comment_link( __( '(Edit)', 'portforwardpodcast' ), ' ' );
 					?>
 				</div><!-- .comment-meta .commentmetadata -->
-			</footer>
-
-			<div class="comment-content"><?php comment_text(); ?></div>
-
+			<?php comment_text(); ?>
+		
+			
 			<div class="reply">
 				<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</div><!-- .reply -->
+			</div>
+
+			
 		</article><!-- #comment-## -->
 
 	<?php

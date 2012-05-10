@@ -66,12 +66,23 @@ function portforwardpodcast_comment( $comment, $args, $depth ) {
 	<?php
 			break;
 		default :
+		
+		$commenterclass = 'user';
+		if ( user_can( $comment->user_id, 'administrator' ) || user_can( $comment->user_id, 'editor' ) ) {
+			$commenterclass = 'admin';
+		} 
 	?>
 	<li <?php comment_class("row"); ?> id="li-comment-<?php comment_ID(); ?>">
 		<article id="comment-<?php comment_ID(); ?>" class="comment span9">
 			<footer <?php if($comment->comment_parent == 0){echo 'class="span1"';} else{echo 'class="span1 offset1"';} ?>>
 				<div class="comment-author vcard">
-					<?php echo get_avatar( $comment, 40 ); ?>
+					<?php //echo get_avatar( $comment, 40 ); 
+					if ( user_can( $comment->user_id, 'administrator' ) || user_can( $comment->user_id, 'editor' ) ) {
+						echo "<span class='sprite adminmouth'></span>";
+					}
+					else
+						echo "<span class='sprite mouth'></span>";
+					?>
 				</div><!-- .comment-author .vcard -->
 				<?php if ( $comment->comment_approved == '0' ) : ?>
 					<em><?php _e( 'Your comment is awaiting moderation.', 'portforwardpodcast' ); ?></em>
@@ -81,13 +92,13 @@ function portforwardpodcast_comment( $comment, $args, $depth ) {
 				
 			</footer>
 
-			<div class="comment-content <?php if($comment->comment_parent == 0){echo "span7";} else{echo "span 6";} ?>">
+			<div class="comment-content <?php if($comment->comment_parent == 0){echo "span7";} else{echo "span6";} ?>">
 				<div class="comment-meta commentmetadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
+					
 					<?php
 						/* translators: 1: date, 2: time */
-						printf( __( '%1$s at %2$s', 'portforwardpodcast' ), get_comment_date(), get_comment_time() ); ?>
-					</time></a>
+						printf( __( 'on %1$s at %2$s <span class="'.$commenterclass.'">%3$s</span> said:', 'portforwardpodcast' ), get_comment_date(), get_comment_time(), get_comment_author_link() ); ?>
+					
 					<?php edit_comment_link( __( '(Edit)', 'portforwardpodcast' ), ' ' );
 					?>
 				</div><!-- .comment-meta .commentmetadata -->

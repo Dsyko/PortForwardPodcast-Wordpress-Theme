@@ -22,40 +22,26 @@
 		return;
 ?>
 
-	<div id="comments" class="comments-area">
-
-	<?php // You can start editing here -- including this comment! ?>
+	<div id="comments" class="comments-area span9">
+	
+	<?php // You can start editing here -- including this comment! ok... if you insist you have been edited, happy? ?>
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'portforwardpodcast' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
-			?>
-		</h2>
-
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav role="navigation" id="comment-nav-above" class="site-navigation comment-navigation">
-			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'portforwardpodcast' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'portforwardpodcast' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'portforwardpodcast' ) ); ?></div>
-		</nav>
-		<?php endif; // check for comment navigation ?>
-
-		<ol class="commentlist">
+		
+		<ul class="commentlist span9">
 			<?php
 				/* Loop through and list the comments. Tell wp_list_comments()
 				 * to use portforwardpodcast_comment() to format the comments.
 				 * If you want to overload this in a child theme then you can
 				 * define portforwardpodcast_comment() and that will be used instead.
-				 * See portforwardpodcast_comment() in functions.php for more.
+				 * See portforwardpodcast_comment() in functions.php for more. <--- that is a blatant LIE the _comment() function is in template-tags.php
 				 */
 				wp_list_comments( array( 'callback' => 'portforwardpodcast_comment' ) );
 			?>
-		</ol>
+		</ul>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav role="navigation" id="comment-nav-below" class="site-navigation comment-navigation">
+		<nav role="navigation" id="comment-nav-below" class="site-navigation comment-navigation span9">
 			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'portforwardpodcast' ); ?></h1>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'portforwardpodcast' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'portforwardpodcast' ) ); ?></div>
@@ -72,5 +58,4 @@
 	<?php endif; ?>
 
 	<?php comment_form(); ?>
-
 </div><!-- #comments .comments-area -->

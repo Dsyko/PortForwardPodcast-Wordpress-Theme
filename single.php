@@ -8,12 +8,12 @@
 
 get_header(); ?>
 
-		<div id="primary" class="site-content">
-			<div id="content" role="main">
+		<div id="primary" class="site-content span9">
+			<div id="content" role="main" class="row">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php portforwardpodcast_content_nav( 'nav-above' ); ?>
+				<?php// portforwardpodcast_content_nav( 'nav-above' ); ?>
 
 				<?php get_template_part( 'content', 'single' ); ?>
 

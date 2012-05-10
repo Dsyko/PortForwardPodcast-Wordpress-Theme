@@ -1289,8 +1289,56 @@ top:10px;
 .year{font-size:.81em; color:#999999; position: relative; bottom:3px;}
 .commentcountertext{text-align:center; position:relative; top:10px; left:25px;}
 
-ul.commentlist{
+.children,
+.commentlist{
 list-style-type: none;
 padding: 0;
 margin: 0;
+}
+
+.comment{
+margin: 10px 0 10px 0;
+}
+
+.comment-content{
+	position:relative;
+	left:-20px;
+	border-style:solid;
+	border-color:#ffffff;
+	border-width:4px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: transparent;
+	/*Setting our divs background to transparent so we can see our background */
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(255, 255, 255);
+    /* RGBa with 0.6 opacity */
+    background: rgba(255, 255, 255, 0.25);
+    /* For IE 5.5 - 7*/
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3FFFFFFF,endColorstr=#3FFFFFFF);   /* IE6 & 7 */
+     zoom: 1;
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3FFFFFFF,endColorstr=#3FFFFFFF)"; /* IE8 */
+}
+.user{
+font-size:1.1em;
+font-weight:bold;
+color: #FFF;
+}
+.admin{
+font-size:1.1em;
+font-weight:bold;
+color: #9d261d;
+}
+.commentmetadata{
+font-size:.81em; 
+color:#999999;
+}
+
+textarea#comment{
+width: 75%;
+}
+
+.comment-author{
+display: inline-block;
 }

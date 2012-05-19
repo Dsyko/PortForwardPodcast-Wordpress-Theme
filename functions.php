@@ -88,10 +88,10 @@ function portforwardpodcast_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Sidebar', 'portforwardpodcast' ),
 		'id' => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
+		'before_widget' => '<aside id="%1$s" class="row span3 widget %2$s"><i class="sprite pin"></i> <i class="sprite pin right"></i><div class="margins">',
+		'after_widget' => "</div></aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'portforwardpodcast_widgets_init' );

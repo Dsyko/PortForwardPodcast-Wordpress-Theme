@@ -48,7 +48,7 @@ html {
 }
 body {
 	background: #fff;
-	background-image:url('images/subtle_freckles.png');
+	background-image:url('images/exclusive_paper.png');
 }
 article,
 aside,
@@ -1269,7 +1269,9 @@ margin-bottom: 35px;
 .mouth {width:60px; height:67px; background-position: -150px -127px}
 .numcomments {width:60px; height:60px; background-position: -226px -34px}
 .paypallogo {width:72px; height:37px; background-position: -150px -196px}
-.pin {width:20px; height:22px; background-position: -2px -229px}
+.pin {width:20px; height:22px; background-position: -2px -229px; position:relative;
+	top: -9px;
+	left: 4px;}
 .reply {width:20px; height:19px; background-position: -24px -229px}
 .rss {width:34px; height:36px; background-position: -224px -171px}
 .tags {width:25px; height:27px; background-position: -78px -227px}
@@ -1345,4 +1347,34 @@ width: 75%;
 
 .comment-author{
 display: inline-block;
+}
+
+.right{
+float: right;
+}
+
+#secondary .widget{
+	-webkit-box-shadow:  2px 3px 4px 0px #666;
+	-moz-box-shadow:  2px 3px 4px 0px #666;
+	box-shadow:  2px 3px 4px 0px #666;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	background: transparent;
+	/* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(255, 255, 255);
+    /* RGBa with 0.6 opacity */
+    background: rgba(255, 255, 255, 0.61);
+    /* For IE 5.5 - 7*/
+     
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B7FFFFFF,endColorstr=#B7FFFFFF)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B7FFFFFF,endColorstr=#B7FFFFFF);   /* IE6 & 7 */
+      zoom: 1;
+	 margin-bottom:1.5cm;
+}
+
+.margins{margin: 6px; position: relative; top: -10px;}
+
+#s {
+width: auto;
 }

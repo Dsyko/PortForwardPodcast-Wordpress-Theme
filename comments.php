@@ -56,14 +56,18 @@
 	?>
 		<p class="nocomments"><?php _e( 'Comments are closed.', 'portforwardpodcast' ); ?></p>
 	<?php endif; ?>
+	
 	<div class="row">
 	<div class="span9">
+	<?php if (comments_open()) :?>
 		<div class="span1">
 			<span class='sprite mouth'></span>
 		</div>
 		<div class="span7 comment-reply-form">
 			<?php comment_form(); ?>
 		</div>
+	<?php endif; ?>
 	</div>
 	</div>
+	
 </div><!-- #comments .comments-area -->

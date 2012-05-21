@@ -1378,3 +1378,17 @@ float: right;
 #s {
 width: auto;
 }
+
+.comment-reply-form label{
+    display: inline;
+}
+
+.comment-reply-form .required{
+    display: inline;
+	color: #9d261d;
+}
+
+.comment-reply-form input,
+.comment-reply-form textarea{
+	display: block;
+}

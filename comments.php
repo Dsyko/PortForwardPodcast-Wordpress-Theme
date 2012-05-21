@@ -22,7 +22,7 @@
 		return;
 ?>
 
-	<div id="comments" class="comments-area span9">
+	<div id="comments_<?php echo $wp_query->post->ID?>" class="comments-area span9">
 	
 	<?php // You can start editing here -- including this comment! ok... if you insist you have been edited, happy? ?>
 
@@ -60,12 +60,8 @@
 	<div class="row">
 	<div class="span9">
 	<?php if (comments_open()) :?>
-		<div class="span1">
-			<span class='sprite mouth'></span>
-		</div>
-		<div class="span7 comment-reply-form">
-			<?php comment_form(); ?>
-		</div>
+		
+			<?php portforwardpodcast_comment_form(); ?>
 	<?php endif; ?>
 	</div>
 	</div>

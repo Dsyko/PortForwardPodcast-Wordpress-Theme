@@ -1277,7 +1277,9 @@ margin-bottom: 35px;
 .tags {width:25px; height:27px; background-position: -78px -227px}
 .tower1 {width:70px; height:98px; background-position: -78px -127px}
 .tower2 {width:74px; height:100px; background-position: -2px -127px}
-.twitterbird {width:160px; height:123px; background-position: -2px -2px}
+.twitterbird {width:160px; height:123px; background-position: -2px -2px;
+  position: relative;
+  left: 120px;}
 
 
 h2 a, h2 a:visited{
@@ -1392,3 +1394,24 @@ width: auto;
 .comment-reply-form textarea{
 	display: block;
 }
+
+.twitter{
+	border-style:solid;
+	border-color:#ffffff;
+	border-width:4px;
+	-moz-border-radius: 7px;
+	border-radius: 7px; 
+	background: transparent;
+	/*Setting our divs background to transparent so we can see our background */
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(255, 255, 255);
+    /* RGBa with 0.6 opacity */
+    background: rgba(255, 255, 255, 0.25);
+    /* For IE 5.5 - 7*/
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3FFFFFFF,endColorstr=#3FFFFFFF);   /* IE6 & 7 */
+     zoom: 1;
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3FFFFFFF,endColorstr=#3FFFFFFF)"; /* IE8 */
+}
+.tweet{ margin: 6px;}
+.tweettime{ font-size:.85em; color:#999999; position: relative; top: -15px; right: 5px;}

@@ -1414,4 +1414,4 @@ width: auto;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3FFFFFFF,endColorstr=#3FFFFFFF)"; /* IE8 */
 }
 .tweet{ margin: 6px;}
-.tweettime{ font-size:.85em; color:#999999; position: relative; top: -15px; right: 5px;}
+.tweettime{ font-size:.85em; color:#999999; position: relative; top: -5px; right: 5px;}

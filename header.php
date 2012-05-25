@@ -12,8 +12,8 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"/>
-<link rel="icon" href="images/favicon.ico" type="image/x-ico"/>
+<link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico" type="image/x-ico"/>
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.

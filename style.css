@@ -799,7 +799,7 @@ table .span21{float:none;width:1644px;margin-left:0;}
 table .span22{float:none;width:1724px;margin-left:0;}
 table .span23{float:none;width:1804px;margin-left:0;}
 table .span24{float:none;width:1884px;margin-left:0;}
-[class^="icon-"],[class*=" icon-"]{display:inline-block;width:14px;height:14px;line-height:14px;vertical-align:text-top;background-image:url("../img/glyphicons-halflings.png");background-position:14px 14px;background-repeat:no-repeat;*margin-right:.3em;}[class^="icon-"]:last-child,[class*=" icon-"]:last-child{*margin-left:0;}
+[class^="icon-"],[class*=" icon-"]{display:inline-block;width:14px;height:14px;line-height:14px;vertical-align:text-top;background-image:url("/images/glyphicons-halflings.png");background-position:14px 14px;background-repeat:no-repeat;*margin-right:.3em;}[class^="icon-"]:last-child,[class*=" icon-"]:last-child{*margin-left:0;}
 .icon-white{background-image:url("../img/glyphicons-halflings-white.png");}
 .icon-glass{background-position:0 0;}
 .icon-music{background-position:-24px 0;}
@@ -1263,7 +1263,9 @@ margin-bottom: 35px;
 .Tms {width:334px; height:30px; background-position: -164px -2px}
 .adminmouth {width:60px; height:67px; background-position: -164px -34px}
 .arrow {width:30px; height:36px; background-position: -224px -209px}
-.bitcoin {width:34px; height:34px; background-position: -256px -209px}
+.bitcoin {width:34px; height:34px; background-position: -256px -209px; 
+  position:relative;
+  top: 10px;}
 .calendar {width:60px; height:66px; background-position: -212px -103px}
 .floppysm {width:32px; height:30px; background-position: -274px -96px}
 .mouth {width:60px; height:67px; background-position: -150px -127px}
@@ -1415,3 +1417,7 @@ width: auto;
 }
 .tweet{ margin: 6px;}
 .tweettime{ font-size:.85em; color:#999999; position: relative; top: -5px; right: 5px;}
+.bitcoinrate{ font-size:.75em; color:#999999;}
+.paypalsubtext{ font-size:.75em; color:#999999; position: relative; top: -13px;}
+a.black:link{color: #000;}
+a.black:visited{color: #000;}

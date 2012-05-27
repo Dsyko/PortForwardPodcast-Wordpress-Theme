@@ -1421,3 +1421,7 @@ width: auto;
 .paypalsubtext{ font-size:.75em; color:#999999; position: relative; top: -13px;}
 a.black:link{color: #000;}
 a.black:visited{color: #000;}
+
+#donors form {
+margin: 0px;
+}

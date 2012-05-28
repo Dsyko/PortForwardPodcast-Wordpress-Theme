@@ -1446,4 +1446,25 @@ width: 44px;
 position: relative;
 bottom: 30px;
 right: 5px;
+
+
+.menu li{
+margin-right: 35px;
+}
+
+.menu a:hover{
+	background: transparent;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.8); /*Chrome Safari Firefox*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);   /* IE6 & 7 */
+      zoom: 1;
+	  
+	-moz-border-radius: 7px;
+	border-radius: 7px; 
+}
+
+.main-navigation ul {
+margin-top: 40px;
+padding-bottom: 70px;
 }

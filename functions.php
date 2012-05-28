@@ -123,11 +123,11 @@ require( get_template_directory() . '/inc/custom-header.php' );
 
 function special_nav_class($classes, $item){
 	//echo print_r($item);
-	echo "<pre>";
-	print_r($item); // or var_dump()
-	echo "</pre><br>";
+	//echo "<pre>";
+	//print_r($item); // or var_dump()
+	//echo "</pre><br>";
 	 //if(is_single() && $item->title == "Sample Page"){ //Notice you can change the conditional from is_single() and $item->title
-			 $classes[] = "special-class";
+			 //$classes[] = "special-class";
 	// }
 	 return $classes;
 }

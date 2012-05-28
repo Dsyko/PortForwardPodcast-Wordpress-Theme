@@ -1473,3 +1473,20 @@ padding-bottom: 70px;
   position: relative;
   top: 10px;
 }
+
+
+.dllink{
+display: inline-block;
+margin-left: 20px;
+width 300px;
+}
+
+.dllink a{
+position: relative;
+bottom: 5px;
+}
+
+.floppysm{
+position: relative;
+top: 10px;
+}

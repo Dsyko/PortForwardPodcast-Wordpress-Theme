@@ -13,10 +13,18 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'portforwardpodcast_credits' ); ?>
-			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'portforwardpodcast' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'portforwardpodcast' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'portforwardpodcast' ), 'portforwardpodcast', '<a href="http://Dsyko.com/" rel="designer">Dsyko</a>' ); ?>
+
+
+
+			<div id="site-info">
+				<a href="http://portforwardpodcast.com/" title="Port Forward Podcast" rel="home">
+					Port Forward Podcast				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="http://wordpress.org/" title="Garble" rel="generator"><img src="<?php bloginfo('template_directory'); echo "/images/michead.png";?>"/></a>
+			</div><!-- #site-generator -->
+
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer .site-footer -->
 </div><!-- #page .hfeed .site -->

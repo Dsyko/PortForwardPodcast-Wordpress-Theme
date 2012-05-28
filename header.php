@@ -68,12 +68,7 @@
 			<h1 class="assistive-text"><?php _e( 'Menu', 'portforwardpodcast' ); ?></h1>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'portforwardpodcast' ); ?>"><?php _e( 'Skip to content', 'portforwardpodcast' ); ?></a></div>
 
-			<?php 
-			
-			
-			wp_nav_menu(array( 'sort_column' => 'menu_order', 'menu' => 'PortFwd', 'container_class' => 'main-menu', 'container_id' => 'header', 'theme_location'  => 'header')); 
-			
-			?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav>
 	</header><!-- #masthead .site-header -->
 	

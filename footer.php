@@ -22,7 +22,7 @@
 			</div><!-- #site-info -->
 
 			<div id="site-generator">
-								<a href="http://wordpress.org/" title="Garble" rel="generator"><img src="<?php bloginfo('template_directory'); echo "/images/michead.png";?>"/></a>
+								<a href="https://github.com/Dsyko/PortForwardPodcast-Wordpress-Theme" title="Garble" rel="generator"><img src="<?php bloginfo('template_directory'); echo "/images/michead.png";?>"/></a>
 			</div><!-- #site-generator -->
 
 		</div><!-- .site-info -->

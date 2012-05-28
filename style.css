@@ -1425,3 +1425,25 @@ a.black:visited{color: #000;}
 #donors form {
 margin: 0px;
 }
+
+#colophon {
+border-top: 4px solid black;
+margin-top: -4px;
+overflow: hidden;
+padding: 18px 0;
+}
+
+#site-info a {
+color: black;
+text-decoration: none;
+font-weight: bold;
+font-size: 14px;
+}
+
+#site-generator {
+float: right;
+width: 44px;
+position: relative;
+bottom: 30px;
+right: 5px;
+}

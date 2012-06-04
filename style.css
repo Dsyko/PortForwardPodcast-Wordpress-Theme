@@ -1,8 +1,8 @@
 /*
 Theme Name: Portforwardpodcast
-Theme URI: https://github.com/Dsyko/_s
+Theme URI: https://github.com/Dsyko/PortForwardPodcast-Wordpress-Theme
 Author: Dsyko
-Author URI: http://Dsyko.com/
+Author URI: https://github.com/Dsyko/
 Description: Theme for the Port Forward Podcast
 Version: 1.1-wpcom
 License: GNU General Public License
@@ -1428,7 +1428,7 @@ margin: 0px;
 
 #colophon {
 border-top: 4px solid black;
-margin-top: -4px;
+margin-top: 10px;
 overflow: hidden;
 padding: 18px 0;
 }
@@ -1446,6 +1446,7 @@ width: 44px;
 position: relative;
 bottom: 30px;
 right: 5px;
+}
 
 
 .menu li{
